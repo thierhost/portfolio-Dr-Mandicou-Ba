@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dr Mandicou Ba</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8"/>
+    <META HTTP-EQUIV="Content-Language" CONTENT="FR"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="Thierno Thiam"/>
+    <meta name="contactstate" content="SENEGAl"/>
+   <link rel="shortcut icon" type="image/x-icon" href="dist/img/ucad.ico" />
+
+    <!-- Nos scripts angular -->
+	<script type="text/javascript" src="dist/js/angular.js"></script>
+	<script type="text/javascript" src="dist/js/angular-route.js"></script>
+		<!-- le bootstrapper de notre application -->
+	<script type="text/javascript" src="app.js"></script>
+	<!--routes -->
+	<script type="text/javascript" src ="route/route.js"></script>
+    <script type="text/javascript" src ="src/controllers/tpaController.js"></script>
+    <!-- css & bootstrap -->
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/font-awesome/css/font-awesome.min.css">
+
+
+
+</head>
+<body ng-app="portfolio" data-spy="scroll" data-target="#main-nav" data-offset="300" ng-jq="jquery">
+    <div ng-view></div>
+    <div id="page-loader"><span></span></div>
+    <!-- inclusion du menu -->
+    <div ng-include="'views/menu.html'"></div>
+    <!-- inclusion du header -->
+    <header id="home" class="parallax-bg overlay-dark" data-parallax="scroll" data-image-src="dist/img/mandicou1.png">
+            <div ng-include="'views/header.html'"></div>
+    </header>
+    <!-- inclusion du profile -->
+    <section id="profile" class="parallax-window white-bg"    data-parallax="scroll" data-image-src="dist/img/profile.jpg">
+        <div ng-include="'views/profile.html'"></div>
+    </section>
+
+    <!-- inclusion du cv -->
+    <div id="cv" class="gray-bg padding-top-bottom ">
+        <div ng-include="'views/cv.html'"></div>
+    </div>
+
+    <!-- inclusion de la recherche -->
+    <div id="recherche" class="dark-bg padding-top-bottom ">
+        <div ng-include="'views/recherche.html'"></div>
+    </div>
+    <!-- inclusion des publications -->
+    <section id="publications" class="white-bg">
+        <div ng-include="'views/publications.html'"></div>
+    </section>
+    <!-- inclusion des enseignements -->
+    <section id="enseignements" class="gray-bg padding-top-bottom">
+        <div ng-include="'views/enseignements.html'"></div>
+    </section>
+
+    <div id="gmar-wrapper">
+        <div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://www.mandicouba.net', 'user' : 1144601, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2014-05-28', 'lang' : 'fr', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript>
+        <a href="http://www3.clustrmaps.com/user/a2c117719">
+        <img src="http://www3.clustrmaps.com/stats/maps-no_clusters/www.mandicouba.net-thumb.jpg" style="width: 100%; height: 400px; " alt="Locations of visitors to this page"/>
+        </a>
+        </noscript>
+    </div>
+    <footer id="main-footer">
+
+        <div class="container text-center">
+
+            <p>&copy; COPYRIGHT DR MANDICOU BA - 2016 by <a href="mailto:thiernothiam@esp.sn" target="_blank">Thierno Thiam</a></p>
+
+        </div>
+
+    </footer>
+
+
+
+    
+    <!-- srcipt js & bootstrap -->
+    <script type="text/javascript" src="dist/js/jquery.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/parallax.min.js"></script>
+    <script src="dist/js/jquery.easing.min.js"></script>
+    <script src="dist/js/script.js"></script>
+</body>
+</html>

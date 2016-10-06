@@ -1,0 +1,6 @@
+<FilesMatch tp.html>
+AuthUserFile /views/ita/.htpasswd
+AuthName "Accès restreint ! Veuillez vous authentifier."
+AuthType Basic
+require valid-user
+</FilesMatch>
